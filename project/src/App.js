@@ -38,24 +38,24 @@ const App = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/">Add Book</Link>
+              <Link to="/add-book">Add Book</Link>
             </li>
             <li>
-            <Link to="/">Saved Books</Link>
+            <Link to="/book-list">Saved Books</Link>
             </li>
           </ul>
         </nav>
         <Routes>
-          <Route>
+          <Route
             path="/" element={<Home books={books} onRemoveBook={saveBook} />}
             />
             <Route path="/add-book" element={<BookForm onAddBook={addBook} />} />
             <Route path="/book-list" element={<BookList books={savedBooks} removeSavedBook={removeSavedBook} />
             }
             />
-          </Route>
-        </Routes>
+          </Routes>
       </Router>
+      );
 
     
 
