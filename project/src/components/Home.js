@@ -19,7 +19,12 @@ const Home = () => {
                 {books.map((book) => (
                     <li key={book.id}>
                       <div className="card text-center" style={{ width: "18rem" }}>
-                        <div class
+                        <div className="card-body">
+                            <h5 className="title">
+                                <strong>Title: {book.title}</strong>
+                            </h5>
+                            
+                        </div>
                     
             </ul>
         </div>
