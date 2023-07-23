@@ -23,6 +23,7 @@ const Home = () => {
                             <h5 className="title">
                                 <strong>Title: {book.title}</strong>
                             </h5>
+                            <p className='card-text'>Author: {book.author}</p>
                             
                         </div>
                     
