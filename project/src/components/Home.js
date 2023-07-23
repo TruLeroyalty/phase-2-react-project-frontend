@@ -3,14 +3,14 @@ import React from 'react';
 const Home = ({books, onRemoveBook}) => {
   return ( 
      <div>
-        <h1>
+        <h1 className="card text-center">
             <strong>
                 Welcome to your Favorite Library
             </strong>
             <br />
         </h1>
         <p>
-            <h2>
+            <h2 className="text-center">
                 Go ahead and browse around or add some suggestions!
             </h2>
         </p>

@@ -21,12 +21,26 @@ const BookList = ({ books, removeSavedBook }) => {
                                 <p className='card-text'>
                                     {book.description}
                                 </p>
-
+                                <a href={"https://www.google.com/search?q=" + book.title}
+                                target="_blank"
+                                className="btn btn-primary"
+                                >
+                                Dig Deeper
+                                </a>
                             </div>
-
+                            <button
+                                onClick={() => removeSavedBook(book.id)}
+                                className="btn btn-primary"
+                            >
+                                Remove
+                            </button>
                         </div>
                     </li>
+                ))}
             </ul>
-        </div>
-    )
-}
+        <br />
+    </div>
+    );
+};
+
+export default BookList;
