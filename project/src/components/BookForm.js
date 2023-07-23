@@ -7,3 +7,9 @@ const BookForm = ({onAddBook}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
+        const newBook = {
+            title: title,
+            author: author,
+            description:description, 
+        };
