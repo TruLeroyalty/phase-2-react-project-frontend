@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = ({books}) => {
+const Home = ({books, onRemoveBook}) => {
   return ( 
      <div>
         <h1>
