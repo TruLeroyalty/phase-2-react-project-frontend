@@ -43,13 +43,16 @@ const Home = () => {
                                 >
                                     Save
                                 </button>
+                            </div>
                         </div>
+                    </li>
+                ))}
                     
             </ul>
         </div>
     </div>
-)
-}
+    );
+};
 
 
 export default Home;
