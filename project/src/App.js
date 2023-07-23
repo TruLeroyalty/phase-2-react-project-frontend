@@ -40,6 +40,9 @@ const App = () => {
             <li>
               <Link to="/">Add Book</Link>
             </li>
+            <li>
+            <Link to="/">Saved Books</Link>
+            </li>
           </ul>
         </nav>
       </Router>
