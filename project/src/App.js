@@ -4,31 +4,42 @@ import Home from "./components/Home";
 
 
 
-function App() {
-  return (
-    <div className="App">
+const App = () => {
+    
       const [books,setBooks] = useState([]);
       
-      const addBook = (newBook) ={'>'} {
+      const addBook = (newBook) => {
         setBooks([...books, newBook]);
-};
+      };
+
 
     const [savedBooks,setSavedBooks] = useState([]);
 
-    const saveBook = (bookId) ={'>'} {
-      const bookToSave = books.find((book) ={'>'} book.id === bookId);
+    const saveBook = (bookId) => {
+      const bookToSave = books.find((book) => book.id === bookId);
       if (bookToSave) {
         setSavedBooks([...savedBooks, bookToSave]);
-        setBooks(books.filter((book) ={'>'} book.id !== bookId));
+        setBooks(books.filter((book) => book.id !== bookId));
       }
     };
 
-    const removeSavedBook = (bookId) ={'>'} {
+    const removeSavedBook = (bookId) => {
       const bookToRemove = savedBooks.find((book) => book.id === bookId);
       if (bookToRemove) {
         setSavedBooks(savedBooks.filter((book) => book.id !== bookId));
       }
     };
+
+    return (
+      <Router>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+          </ul>
+        </nav>
+      </Router>
 
     
 
@@ -39,5 +50,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
