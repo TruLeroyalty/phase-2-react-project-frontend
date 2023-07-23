@@ -1,14 +1,19 @@
 import React from 'react';
 
 const Home = () => {
-  return(  <div>
+  return ( 
+     <div>
         <h1>
-            <p>
             <strong>
                 Welcome to your Favorite Library
             </strong>
-            </p>
+            <br />
         </h1>
+        <p>
+            <h2>
+                Go ahead and browse around or add some suggestions!
+            </h2>
+        </p>
     </div>
 )
 }
