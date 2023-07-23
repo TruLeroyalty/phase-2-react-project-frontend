@@ -8,6 +8,12 @@ function App() {
   return (
     <div className="App">
       const [books,setBooks] = useState([]);
+      
+      const addBook = (newBook) => {
+        setBooks([...books, newBook]);
+};
+
+    
 
      
      
