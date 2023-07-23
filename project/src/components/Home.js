@@ -14,6 +14,15 @@ const Home = () => {
                 Go ahead and browse around or add some suggestions!
             </h2>
         </p>
+        <div>
+            <ul>
+                {books.map((book) => (
+                    <li key={book.id}>
+                      <div className="card text-center" style={{ width: "18rem" }}>
+                        <div class
+                    
+            </ul>
+        </div>
     </div>
 )
 }
