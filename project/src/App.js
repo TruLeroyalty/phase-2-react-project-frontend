@@ -37,6 +37,9 @@ const App = () => {
             <li>
               <Link to="/">Home</Link>
             </li>
+            <li>
+              <Link to="/">Add Book</Link>
+            </li>
           </ul>
         </nav>
       </Router>
