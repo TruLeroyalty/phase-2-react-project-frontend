@@ -28,7 +28,13 @@ const Home = () => {
                                 Reason to Check it Out: <br />
                             </p>
                             <p className="card-text">{book.description}</p>
-                            
+                            <a href={"https://www.google.com/search?q=" + book.title}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className='btn btn-primary'
+                            >
+                                Dig Deeper
+                            </a>
                         </div>
                     
             </ul>
