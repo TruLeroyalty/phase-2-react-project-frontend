@@ -48,6 +48,9 @@ const App = () => {
         <Routes>
           <Route>
             path="/" element={<Home books={books} onRemoveBook={saveBook} />}
+            />
+            <Route path="/add-book" element={<BookForm onAddBook={addBook} />} />
+            
           </Route>
         </Routes>
       </Router>
