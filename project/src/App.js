@@ -45,6 +45,11 @@ const App = () => {
             </li>
           </ul>
         </nav>
+        <Routes>
+          <Route>
+            path="/" element={<Home books={books} onRemoveBook={saveBook} />}
+          </Route>
+        </Routes>
       </Router>
 
     
