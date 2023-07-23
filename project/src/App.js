@@ -1,6 +1,9 @@
 import './App.css';
-import React from 'react';
+import {BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import React, {useState} from 'react';
 import Home from "./components/Home";
+import BookForm from "./components/BookForm";
+import BookList from "./components/BookList";
 
 
 
@@ -57,15 +60,9 @@ const App = () => {
       </Router>
       );
 
-    
-
-     
-     
-     
-     <Home />
-    </div>
-  );
-}
+    <Home />
+          };
+  
 
 
 export default App;
