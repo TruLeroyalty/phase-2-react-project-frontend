@@ -23,6 +23,13 @@ function App() {
       }
     };
 
+    const removeSavedBook = (bookId) ={'>'} {
+      const bookToRemove = savedBooks.find((book) => book.id === bookId);
+      if (bookToRemove) {
+        setSavedBooks(savedBooks.filter((book) => book.id !== bookId));
+      }
+    };
+
     
 
      
