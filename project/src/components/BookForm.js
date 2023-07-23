@@ -30,5 +30,9 @@ const BookForm = ({onAddBook}) => {
             .catch((error) => {
                 console.error("Error adding book:", error);
             });
-        }
-    }
+
+            setTitle('');
+            setAuthor('');
+            setDescription('');
+        };
+    };
