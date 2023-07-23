@@ -35,6 +35,14 @@ const Home = () => {
                             >
                                 Dig Deeper
                             </a>
+                            <br />
+                            <br />
+                            <button 
+                                onClick={() =>onRemoveBook(book.id)}
+                                className="btn btn-primary"
+                                >
+                                    Save
+                                </button>
                         </div>
                     
             </ul>
