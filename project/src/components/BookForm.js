@@ -24,8 +24,6 @@ const BookForm = ({onAddBook}) => {
             .then((res) => res.json())
             .then((data) => {
                 console.log("Book added successfully:", data);
-
-                fetchBooks();
             })
             .catch((error) => {
                 console.error("Error adding book:", error);
@@ -36,3 +34,5 @@ const BookForm = ({onAddBook}) => {
             setDescription('');
         };
     };
+
+    export default BookForm;
